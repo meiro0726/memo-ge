@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "x$1" = "x-usage" ]; then
+  echo "grep, select and edit it."
+  exit
+fi
+
+memo e $(basename $(memo g "$@" | peco | awk 'BEGIN{FS=":"};{print $1}'))
