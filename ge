@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "x$1" = "x-usage" ]; then
-  echo "memo ge [PATTERN]"
+  echo "memo ge PATTERN"
   echo "then you can grep, select and edit it."
   exit
 fi
