@@ -11,6 +11,6 @@ just put `ge` to `pluginsdir`.
 
 ## prerequisite
 
-* mattn/memo 0.9.0 or later
+* mattn/memo 0.0.9 or later
 * peco
 * awk
