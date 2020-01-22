@@ -3,7 +3,7 @@ a plugin for mattn/memo to grep and edit it.
 
 ## Usage
 ```bash
-echo "memo ge PATTERN"
+memo ge PATTERN
 ```
 
 ## Installation
