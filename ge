@@ -6,4 +6,9 @@ if [ "x$1" = "x-usage" ]; then
   exit
 fi
 
+if [ $# -eq 0 ]; then
+  memo e
+  exit 0
+fi
+
 memo e $(basename $(memo g "$@" | peco | awk 'BEGIN{FS=":"};{print $1}'))
