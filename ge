@@ -8,7 +8,7 @@ fi
 
 if [ $# -eq 0 ]; then
   memo e
-  exit 0
+  exit
 fi
 
 memo e $(memo g "$@" | sed 's/^.*\/\(.*\.md\)/\1/' | peco | awk 'BEGIN{FS=":"};{print $1}')
