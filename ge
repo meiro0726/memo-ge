@@ -11,4 +11,4 @@ if [ $# -eq 0 ]; then
   exit 0
 fi
 
-memo e $(basename $(memo g "$@" | sed 's/^.*)\/(.*\.md)/$2.md/'| sed 's/^.*\/\(.*\.md\)/\1/' | peco | awk 'BEGIN{FS=":"};{print $1}'))
+memo e $(memo g "$@" | sed 's/^.*\/\(.*\.md\)/\1/' | peco | awk 'BEGIN{FS=":"};{print $1}')
