@@ -11,4 +11,4 @@ if [ "x$1" = "x-usage" ]; then
   exit
 fi
 
-memo e $(memo g "$@" | sed 's/^.*\/\(.*\.md\)/\1/' | peco | awk 'BEGIN{FS=":"};{print $1}')
+memo g "$@" | sed 's/^.*\/\(.*\.md\)/\1/' | peco --on-cancel=error | awk 'BEGIN{FS=":"};{print $1}' | xargs -r memo e 
